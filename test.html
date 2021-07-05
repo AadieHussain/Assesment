@@ -1,0 +1,178 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UI Assessment</title>
+    <style>
+	.imgicon{
+        top: 0px;
+        left: 0px;
+        width: 90px;
+		height: 50px;
+		
+	}
+        div.d1{
+            background-color: #fffffa;
+            width:100%;
+            height: 90px;
+             z-index: -1;
+        }
+        div.d2{
+            background-color: #f4f4f4;
+            width:100%;
+            height: 85%;
+             z-index: 0;
+        }
+        div.d3{
+            background-color: #fafbfc;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            width: 90px;
+            height: 100%;
+            z-index: 1;
+            box-shadow: 10px 2px 7px rgb(0,0,0,0.09); 
+            
+        }
+          div.d4{
+            background-color: #ffffff;
+            box-shadow: 10px 2px 7px rgb(0,0,0,0.09); 
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            width:90px;
+            height:90px;
+            z-index: 2;
+        }
+       p{
+            text-align: center;
+            color: #819bb3;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width:90px;
+            height:90px;
+            z-index: 8;
+            font-size: 28px;
+        }
+        p.d6{
+            text-align: center;
+            color: #819bb3;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width:390px;
+            height:90px;
+            z-index: 4;
+            font-family: Tahoma;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        i.fa-play{
+          transform: rotate(180deg);
+        }
+        i.fa-chevron-circle-right{
+          color: black;
+            font-size: 50px;
+        }
+        
+        input[type=text]{
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            width:490px;
+            height:40px;
+            z-index: 15;
+            border-radius: 4px;
+            border: none;
+        }
+        input[type=text]::placeholder{
+            color:black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        input[type=file]{
+            visibility: hidden;
+        }
+        label{
+            text-align: center;
+            color:black;
+            font-weight: bold;
+            font-size: 12px;
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            z-index: 5;
+            border-radius: 4px;
+            border: none;
+            font-family: Tahoma;
+            background-color: white;
+            padding: 60px 50;
+        }
+   p.d7{
+            text-align: center;
+            color: black;
+            position: absolute;
+            top: 255px;
+			left: 45%;
+            font-family: Tahoma;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        p.d8{
+            text-align: center;
+            color: #819bb3;
+            position: absolute;
+            top: 195px;
+            left:0px;
+            font-family: Tahoma;
+            font-weight: bold;
+            font-size: 12px;
+            z-index: 8;
+        }
+        a{
+            color: #819bb3;
+            padding: .75em;
+            border: 0px #0388fc solid;
+            background: linear-gradient(to right, #819bb3, #eee);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            transition: background-size 0.5s 0s;
+        }
+	input[type=text] {
+		width: 60%;
+		position: absolute;
+        left:300px;
+		padding: 12px 20px;
+		border-radius: 15px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	
+	a:hover {
+		background-color: #c9e2e7;
+	
+	}
+    </style>
+	
+    </head>
+    <body>
+        <div class="d1"> </div>
+        <div class="d2"> </div>
+        <div class="d3"> </div>
+        <div class="d4"> </div>
+        <p class="d5">
+             <img src="image.jpg" class="imgicon"><br><br><br><br>
+             <a href="#"> <i class="fa fa-user-circle-o" aria-hidden="true"></i></a><br><br><br>
+             <a href="#"> <i class="fa fa-id-card" aria-hidden="true"></i></a><br><br><br>
+             <a href="#"> <i class="fa fa-cog" aria-hidden="true"></i></a>
+        </p>
+		<form>
+        <p class="d6"> <i class="fa fa-play" aria-hidden="true"></i> &nbsp;Videos</p>
+         <p class="d7"> or</p>
+         <p class="d8"> Students<br><br><br><br><br><br><br>Lesson Plan<br><br><br><br><br><br><br>Settings</p>
+       <div class="tbox"> <input type="text" placeholder="Insert URL here" ></div>
+        <input type="file" name="file" id="file" class="inputfile">
+        <label for="file">upload</label>
+        </form>
+    </body>
+</html>
